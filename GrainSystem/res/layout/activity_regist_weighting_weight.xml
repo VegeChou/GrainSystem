@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    
+    <TextView
+        android:id="@+id/regist_weighting_weight_tv_title"
+        style="@style/TextViewTitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/regist_weighing_weight"/>
+
+	<LinearLayout 
+	    android:layout_below="@id/regist_weighting_weight_tv_title"
+	    android:id="@+id/regist_weighting_weight_ll_top"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_margin="5dp">
+	    
+	    <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="2dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/weight"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/regist_weighting_weight_tv_moisture_deduct_amount"
+		      		android:layout_width="240dp"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGroundLeft"/>
+		      	
+		      	<TextView 
+		      	    android:id="@+id/regist_weighting_weight_tv_kilogram_percent_one"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/kilogram"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGroundRight"/>
+	      	</LinearLayout>
+	      	
+	   	</LinearLayout>
+	   	
+       <RadioGroup 
+	    	android:id="@+id/regist_weighting_weight_rbtn_group_loading"
+	      	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_gravity="center_horizontal">
+	            <RadioButton 
+		       		android:id="@+id/regist_weighting_weight_rbtn_loading_finish"
+		       		android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:text="@string/gross_weight"
+					android:textSize="12sp"/>
+	  		
+		  		<RadioButton 
+					android:id="@+id/regist_weighting_weight_rbtn_loading_unfinish"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:text="@string/tare"
+					android:textSize="12sp"/>
+		</RadioGroup>
+	   	
+		<LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="2dp">
+	    	
+	        <TextView 
+	  		    style="@style/TextViewBackGroundLeft"
+		   		android:layout_width="fill_parent"
+		   		android:layout_weight="1"
+		   		android:layout_height="35dp"
+		   		android:text="@string/type"
+		   		android:layout_gravity="center"
+		   	    android:gravity="center" />
+	        
+	        <TextView 
+	  		    style="@style/TextViewBackGroundRight"
+		   		android:layout_width="fill_parent"
+		   		android:layout_weight="1"
+		   		android:layout_height="35dp"
+		   		android:text="@string/weight_kg"
+		   		android:layout_gravity="center"
+		   	    android:gravity="center" />
+	    </LinearLayout>
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:id="@+id/regist_weighting_weight_ll_bottom"
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_margin="5dp">
+	    
+		<Button 
+	   	    android:layout_margin="2dp"
+	   	    style="@style/CornerButton"
+		    android:id="@+id/regist_weighting_weight_btn_read_card"
+		    android:layout_width="fill_parent"
+		    android:layout_height="30dp"
+		    android:layout_gravity="center"
+		    android:text="@string/read_card"
+		    android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:visibility="gone"/>
+		
+		<LinearLayout 
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+	        
+		    <Button 
+		        style="@style/CornerButton"
+		        android:id="@+id/regist_weighting_weight_btn_save_deduction_discount"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="10"
+				android:layout_marginLeft="2dp"
+				android:layout_marginRight="1dp"
+				android:text="@string/confirm_weight"/>
+		    
+			<Button 
+			    style="@style/CornerButton"
+			    android:id="@+id/regist_weighting_weight_btn_regist_vehicle_work"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="10"
+			    android:layout_marginLeft="1dp"
+				android:layout_marginRight="2dp"
+			    android:text="@string/recaculate"/>
+			
+	    </LinearLayout>
+	</LinearLayout>
+	
+	<ListView 
+	    android:layout_below="@id/regist_weighting_weight_ll_top"
+	    android:layout_above="@id/regist_weighting_weight_ll_bottom"
+   	    android:id="@+id/regist_weighting_weight_lv"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"/>
+	
+</RelativeLayout>

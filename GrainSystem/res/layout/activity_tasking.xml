@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/background">
+    
+    <LinearLayout 
+        android:id="@+id/tasking_ll"
+    	android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp">
+        
+	    <Button 
+	        style="@style/CornerButton"
+	        android:id="@+id/tasking_btn_newest_task"
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="10"
+			android:layout_marginRight="1dp"
+			android:text="@string/newest_task"/>
+	    
+		<Button 
+		    style="@style/CornerButton"
+		    android:id="@+id/tasking_btn_process_task"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="10"
+		    android:layout_marginLeft="1dp"
+		    android:text="@string/process_task"/>
+			
+    </LinearLayout>
+    
+	<Button 
+	    android:layout_above="@+id/tasking_ll"
+	    style="@style/CornerButton"
+	    android:id="@+id/tasking_btn_more"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="10"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:text="@string/More"/>
+    
+     <TextView
+        android:id="@+id/warehouse_info_tv_title"
+        android:layout_alignParentTop="true"
+        style="@style/TextViewTitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/tasking"/>
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:orientation="vertical"
+	    android:layout_above="@id/tasking_btn_more"
+	    android:layout_below="@id/warehouse_info_tv_title"
+	    android:layout_margin="5dp">
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+	    	
+	        <TextView 
+	            style="@style/TextViewBackGroundLeft"
+		   		android:layout_width="fill_parent"
+		   		android:layout_weight="1"
+		   		android:layout_height="35dp"
+		   		android:text="@string/owner_name"
+		   		android:layout_gravity="center"
+		   	    android:gravity="center" />
+	        
+	        <TextView 
+	  		    android:background="#9EA7B3"
+		   		android:layout_width="fill_parent"
+		   		android:layout_weight="1"
+		   		android:layout_height="35dp"
+		   		android:text="@string/vehicle_plate"
+		   		android:layout_gravity="center"
+		   	    android:gravity="center" />
+	        
+	        <TextView 
+	  		    style="@style/TextViewBackGroundRight"
+		   		android:layout_width="fill_parent"
+		   		android:layout_weight="1"
+		   		android:layout_height="35dp"
+		   		android:text="@string/task_kind"
+		   		android:layout_gravity="center"
+		   	    android:gravity="center" />
+	        
+	    </LinearLayout>
+	    
+		<ListView 
+		    android:id="@+id/tasking_lv"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content">
+		</ListView>
+	</LinearLayout>
+</RelativeLayout>

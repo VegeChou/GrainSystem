@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <TextView
+        style="@style/TextViewTitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/help"/>
+    
+    <TextView 
+        android:id="@+id/help_tv_about"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="这里是帮助信息!"
+        android:gravity="center"/>
+    
+    <Button
+        style="@style/CornerButton"
+        android:id="@+id/help_btn_software_update"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/software_update"
+        android:layout_margin="2dp"/>
+</RelativeLayout>

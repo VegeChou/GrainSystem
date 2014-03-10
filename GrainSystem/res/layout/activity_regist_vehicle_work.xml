@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    
+   	<LinearLayout 
+   	    android:id="@+id/regist_vehicle_work_ll_bottom"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_margin="5dp">
+        
+	    <Button 
+	        style="@style/CornerButton"
+	        android:id="@+id/regist_vehicle_work_btn_regist"
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="2dp"
+			android:layout_marginRight="1dp"
+			android:gravity="center"
+			android:layout_weight="1"
+			android:text="@string/regist"/>
+	    
+		<Button 
+		    style="@style/CornerButton"
+		    android:id="@+id/regist_vehicle_work_btn_deduction_discount"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="1dp"
+			android:layout_marginRight="2dp"
+			android:gravity="center"
+			android:layout_weight="1"
+		    android:text="@string/deduction_discount"/>
+    </LinearLayout>
+    
+   	<TextView
+   	    android:id="@+id/regist_vehicle_worr_tv_title"
+        style="@style/TextViewTitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/register_vehicle_work"
+	    android:layout_alignParentTop="true"/>
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:layout_below="@id/regist_vehicle_worr_tv_title"
+	    android:layout_above="@id/regist_vehicle_work_ll_bottom"
+	    android:orientation="vertical"
+	    android:layout_margin="5dp">
+	    
+	   	<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content">
+		    
+	  		<TextView 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="wrap_content"
+		   		android:text="@string/storehouse_warehouse"
+		   		style="@style/TextViewInfoBackGround"/>
+	  		
+	  		<Spinner
+		        android:id="@+id/regist_vehicle_work_spinner_warehouse"
+		        android:layout_width="fill_parent"
+		        android:layout_height="40dp"
+		        android:layout_marginLeft="3dp"
+		        android:layout_marginRight="3dp"
+		        android:layout_weight="1"
+		        style="@style/MySpinner"/>
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="1dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		            style="@style/TextViewNoBackGround"
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/legal"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		            style="@style/TextViewBackGround"
+		          	android:id="@+id/regist_vehicle_work_tv_legal"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"/>
+		      	
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		            style="@style/TextViewNoBackGround"
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/varieties"
+		      		android:layout_marginRight="5dp"
+		      		android:layout_marginLeft="5dp"/>
+		        <TextView 
+		            style="@style/TextViewBackGround"
+		          	android:id="@+id/regist_vehicle_work_tv_varieties"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"/>
+	      	</LinearLayout>
+	    </LinearLayout> 
+	    
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="1dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/license_plate"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/regist_vehicle_work_tv_license_plate"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGround"/>
+		      	
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/owners"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"
+		      		android:layout_marginLeft="5dp"/>
+		        <TextView 
+		          	android:id="@+id/regist_vehicle_work_tv_owners"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+					style="@style/TextViewBackGround"/>
+	      	</LinearLayout>
+	    </LinearLayout> 
+	    
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="1dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/type"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/regist_vehicle_work_tv_type"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGround"/>
+		      	
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/link"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"
+		      		android:layout_marginLeft="5dp"/>
+		        <TextView 
+		          	android:id="@+id/regist_vehicle_work_tv_link"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGround"/>
+	      	</LinearLayout>
+	    </LinearLayout> 
+	    
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="1dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/gross_weight"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/regist_vehicle_work_tv_gross_weight"
+		      		android:layout_width="90dp"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGroundLeft"/>
+		      	
+		      	<TextView 
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/kilogram"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGroundRight"/>
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/tare"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"
+		      		android:layout_marginLeft="5dp"/>
+		        <TextView 
+		          	android:id="@+id/regist_vehicle_work_tv_tare"
+		      		android:layout_width="85dp"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGroundLeft"/>
+		      	
+		      	<TextView 
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/kilogram"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGroundRight"/>
+		      	
+	      	</LinearLayout>
+	   	</LinearLayout>
+	    
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="1dp"
+		    android:visibility="gone">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/net_weigth"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/regist_vehicle_work_tv_net_weight"
+		      		android:layout_width="90dp"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGroundLeft"/>
+		      	
+		      	<TextView 
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/kilogram"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGroundRight"/>
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/deduction"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"
+		      		android:layout_marginLeft="5dp"/>
+		        <TextView 
+		          	android:id="@+id/regist_vehicle_work_tv_deduction"
+		      		android:layout_width="85dp"
+		      		android:layout_height="wrap_content"
+					style="@style/TextViewBackGroundLeft"/>
+		      	
+		      	<TextView 
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/kilogram"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGroundRight"/>
+		      	
+	      	</LinearLayout>
+	   	</LinearLayout>
+	   	
+	   	<LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+		    android:layout_margin="1dp">
+	        
+	        <TextView 
+	      		android:layout_width="wrap_content"
+	      		android:layout_height="wrap_content"
+	      		android:text="@string/warehouse"
+	      		style="@style/TextViewNoBackGround"
+	      		android:layout_marginRight="5dp"/>
+	        <TextView 
+	          	android:id="@+id/regist_vehicle_work_tv_uploading_warehouse"
+	      		android:layout_width="fill_parent"
+	      		android:layout_height="wrap_content"
+	      		style="@style/TextViewBackGround"/>
+	    </LinearLayout>
+	    
+	  	<RadioGroup 
+	    	android:id="@+id/regist_vehicle_work_rbtn_group_loading"
+	      	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_gravity="center_horizontal">
+	            <RadioButton 
+		       		android:id="@+id/regist_vehicle_work_rbtn_loading_finish"
+		       		android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:text="@string/loading_finish"
+					android:textSize="12sp"/>
+	  		
+		  		<RadioButton 
+					android:id="@+id/regist_vehicle_work_rbtn_loading_unfinish_need_assay"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:text="@string/loading_unfinish_need_assay"
+					android:textSize="12sp"/>
+		  		<RadioButton 
+					android:id="@+id/regist_vehicle_work_rbtn_loading_unfinish_change_warehouse"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:text="@string/loading_unfinish_change_warehouse"
+					android:textSize="12sp"/>
+		</RadioGroup>
+	   	
+	    
+	   	<Button 
+	   	    android:layout_margin="2dp"
+	   	    style="@style/CornerButton"
+		    android:id="@+id/regist_vehicle_work_btn_change_warehouse"
+		    android:layout_width="fill_parent"
+		    android:layout_height="30dp"
+		    android:layout_gravity="center"/>
+	   	
+	   	<Button 
+	   	    android:layout_margin="2dp"
+	   	    style="@style/CornerButton"
+		    android:id="@+id/regist_vehicle_work_btn_read_card"
+		    android:layout_width="fill_parent"
+		    android:layout_height="30dp"
+		    android:layout_gravity="center"
+		    android:text="@string/read_card"
+		    android:visibility="gone"/>
+	</LinearLayout>
+</RelativeLayout>

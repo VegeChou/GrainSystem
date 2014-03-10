@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/background">
+    
+    <Button 
+	    android:layout_alignParentBottom="true"
+	    style="@style/CornerButton"
+	    android:id="@+id/warehouse_info_btn_more"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/More"
+		android:layout_margin="5dp"/>
+    
+     <TextView
+        android:id="@+id/warehouse_info_tv_title"
+        android:layout_alignParentTop="true"
+        style="@style/TextViewTitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/Query_In_Out"/>
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:orientation="vertical"
+	    android:layout_above="@id/warehouse_info_btn_more"
+	    android:layout_below="@id/warehouse_info_tv_title"
+	    android:layout_margin="5dp">
+	    
+	    <RadioGroup 
+	        android:id="@+id/warehouse_info_rbtn_group_stock_in_out"
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+	        
+	        <RadioButton 
+		        android:id="@+id/warehouse_info_rbtn_acquisition_stock_in"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:text="@string/acquisition_stock_in"/>
+	    
+	    	<RadioButton 
+		        android:id="@+id/warehouse_info_rbtn_sell_stock_out"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:text="@string/sell_stock_out"/>
+	    </RadioGroup>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+	    	
+	        <TextView 
+	            style="@style/TextViewBackGroundLeft"
+		   		android:layout_width="fill_parent"
+		   		android:layout_weight="90"
+		   		android:layout_height="35dp"
+		   		android:text="@string/Date"
+		   		android:layout_gravity="center"
+		   	    android:gravity="center" />
+	        
+	        <TextView 
+	  		    android:background="#9EA7B3"
+		   		android:layout_width="fill_parent"
+		   		android:layout_weight="100"
+		   		android:layout_height="35dp"
+		   		android:text="@string/NetWeight_KG"
+		   		android:layout_gravity="center"
+		   	    android:gravity="center" />
+	        
+	        <TextView 
+	  		    style="@style/TextViewBackGroundRight"
+		   		android:layout_width="fill_parent"
+		   		android:layout_weight="100"
+		   		android:layout_height="35dp"
+		   		android:text="@string/Deduction_KG"
+		   		android:layout_gravity="center"
+		   	    android:gravity="center" />
+	        
+	    </LinearLayout>
+	    
+		<ListView 
+		    android:id="@+id/warehouse_info_lv"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content">
+		</ListView>
+	</LinearLayout>
+</RelativeLayout>

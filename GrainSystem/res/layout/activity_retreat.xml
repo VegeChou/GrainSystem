@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"  
+    android:background="@drawable/background">
+    
+  	<TextView
+  	    android:id="@+id/retreat_tv_title"
+   	    style="@style/TextViewTitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/retreat"/>
+    
+	<LinearLayout 
+	    android:layout_below="@id/retreat_tv_title"
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent" 
+	    android:orientation="vertical"
+	    android:layout_margin="5dp">
+	    
+	   	<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="2dp">
+		    
+	  		<TextView 
+	  		    style="@style/TextViewInfoBackGround"
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="wrap_content"
+		   		android:text="@string/storehouse_warehouse"/>
+	  		
+	  		<TextView 
+	  		    android:id="@+id/retreat_tv_storehouse_warehouse"
+	  		    style="@style/TextViewInfoBackGround"
+	  		    android:layout_marginLeft="5dp"
+		   		android:layout_width="fill_parent"
+		   		android:layout_height="wrap_content"/>
+		</LinearLayout>
+		
+	   	<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="2dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		            style="@style/TextViewNoBackGround"
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/warehouse"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		            style="@style/TextViewBackGround"
+		          	android:id="@+id/retreat_tv_warehouse"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"/>
+		      	
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		            style="@style/TextViewNoBackGround"
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/varieties"
+		      		android:layout_marginLeft="5dp"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		            style="@style/TextViewBackGround"
+		          	android:id="@+id/retreat_tv_varieties"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"/>
+	      	</LinearLayout>
+	    </LinearLayout> 
+	    
+	   		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="2dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/license_plate"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/retreat_tv_license_plate"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGround"/>
+		      	
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/owners"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginLeft="5dp"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/retreat_tv_owners"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+					style="@style/TextViewBackGround"/>
+	      	</LinearLayout>
+	    </LinearLayout> 
+	    
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="2dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/type"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/retreat_tv_type"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGround"/>
+		      	
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/link"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginLeft="5dp"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/retreat_tv_link"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGround"/>
+	      	</LinearLayout>
+	    </LinearLayout> 
+	    
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="2dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/gross_weight"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/retreat_tv_gross_weight"
+		      		android:layout_width="90dp"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGroundLeft"/>
+		      	
+		      	<TextView 
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/kilogram"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGroundRight"/>
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/tare"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginLeft="5dp"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/retreat_tv_tare"
+		      		android:layout_width="85dp"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGroundLeft"/>
+		      	
+		      	<TextView 
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/kilogram"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGroundRight"/>
+		      	
+	      	</LinearLayout>
+	   	</LinearLayout>
+	    
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="2dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/net_weigth"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/retreat_tv_net_weight"
+		      		android:layout_width="90dp"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGroundLeft"/>
+		      	
+		      	<TextView 
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/kilogram"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGroundRight"/>
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/deduction"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginLeft="5dp"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/retreat_tv_deduction"
+		      		android:layout_width="85dp"
+		      		android:layout_height="wrap_content"
+					style="@style/TextViewBackGroundLeft"/>
+		      	
+		      	<TextView 
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/kilogram"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGroundRight"/>
+		      	
+	      	</LinearLayout>
+	   	</LinearLayout>
+	   	
+		<LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+		    android:layout_margin="2dp">
+	        
+	        <TextView 
+	      		android:layout_width="wrap_content"
+	      		android:layout_height="wrap_content"
+	      		android:text="@string/prompt"
+	      		style="@style/TextViewNoBackGround"
+	      		android:layout_marginRight="5dp"/>
+	        <TextView 
+	          	android:id="@+id/retreat_tv_prompt"
+	      		android:layout_width="fill_parent"
+	      		android:layout_height="80dp"
+	      		style="@style/TextViewBackGround"/>
+	    </LinearLayout>
+	</LinearLayout>
+   	<LinearLayout 
+   	    android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp">
+        
+	    <Button 
+	        style="@style/CornerButton"
+	        android:id="@+id/retreat_btn_read_card"
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="1dp"
+			android:gravity="center"
+			android:layout_weight="1"
+			android:text="@string/read_card"
+			android:visibility="gone"/>
+	    
+		<Button 
+		    style="@style/CornerButton"
+		    android:id="@+id/retreat_btn_retreat"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="1dp"
+			android:layout_marginRight="2dp"
+			android:gravity="center"
+		    android:layout_weight="1"
+		    android:text="@string/retreat"/>
+		
+    </LinearLayout>
+</RelativeLayout>

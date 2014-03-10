@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    
+    
+    <TextView
+        android:id="@+id/adjust_deduction_discount_tv_title"
+        style="@style/TextViewTitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/adjust_quality_info"
+	    android:layout_alignParentTop="true"/>
+
+	<LinearLayout 
+	    android:layout_below="@id/adjust_deduction_discount_tv_title"
+	    android:id="@+id/adjust_deduction_discount_ll_top"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_margin="5dp">
+	    
+	    <LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="2dp">
+		    
+	  		<TextView 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="wrap_content"
+		   		android:text="@string/storehouse_warehouse"
+		   		style="@style/TextViewInfoBackGround"/>
+	  		
+	  		<Spinner
+		        android:id="@+id/adjust_deduction_discount_spinner_warehouse"
+		        android:layout_width="fill_parent"
+		        android:layout_height="40dp"
+		        android:layout_marginLeft="5dp"
+		        android:layout_weight="1"
+		        style="@style/MySpinner"/>
+	  		
+		</LinearLayout>
+		
+	    
+	    <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="2dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/moisture_deduction"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/adjust_deduction_discount_tv_moisture_deduct_amount"
+		      		android:layout_width="60dp"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGroundLeft"/>
+		      	
+		      	<TextView 
+		      	    android:id="@+id/adjust_deduction_discount_tv_kilogram_percent_one"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGroundRight"/>
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/add_deduction"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"
+		      		android:layout_marginLeft="5dp"/>
+		        <EditText 
+		          	android:id="@+id/adjust_deduction_discount_et_moisture_deduct_amount_add"
+		      		android:layout_width="80dp"
+		      		android:layout_height="35dp"
+		      		style="@style/EditTextBackGround"
+		      		android:inputType="number"/>
+		        
+		        <Button
+		      	    android:id="@+id/adjust_deduction_discount_btn_adjust_moisture_deducted_unit"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGround"/>
+		      	
+	      	</LinearLayout>
+	   	</LinearLayout>
+	   	
+	    <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="2dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/impurity_deduction"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/adjust_deduction_discount_tv_impurity_deduct_amount"
+		      		android:layout_width="60dp"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGroundLeft"/>
+		      	
+		      	<TextView 
+		      	    android:id="@+id/adjust_deduction_discount_tv_kilogram_percent_two"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGroundRight"/>
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/add_deduction"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"
+		      		android:layout_marginLeft="5dp"/>
+		        <EditText 
+		          	android:id="@+id/adjust_deduction_discount_et_impurity_deduct_amount_add"
+		      		android:layout_width="80dp"
+		      		android:layout_height="35dp"
+		      		style="@style/EditTextBackGround"
+		      		android:inputType="number"/>
+		        
+  		        <Button 
+		      	    android:id="@+id/adjust_deduction_discount_btn_adjust_impurity_deducted_unit"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGround"/>
+		      	
+	      	</LinearLayout>
+	   	</LinearLayout>
+		
+	   	
+	    <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="2dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/clear_sundry_fees"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/adjust_deduction_discount_tv_clear_sundry_fees"
+		      		android:layout_width="60dp"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGroundLeft"/>
+		      	
+		      	<TextView 
+		      	    android:id="@+id/adjust_deduction_discount_tv_yuan_percent_one"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGroundRight"/>
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/add_deduction"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"
+		      		android:layout_marginLeft="5dp"/>
+		        <EditText 
+		          	android:id="@+id/adjust_deduction_discount_et_clear_sundry_fees_add"
+		      		android:layout_width="80dp"
+		      		android:layout_height="35dp"
+		      		style="@style/EditTextDisableBackGround"
+		      		android:inputType="number"
+		      		android:focusable="false"/>
+		        <Button 
+		      	    android:id="@+id/adjust_deduction_discount_btn_adjust_incidental_expenses_deducted_unit"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGround"/>
+		      	
+	      	</LinearLayout>
+	   	</LinearLayout>
+		
+	   	
+	    <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="2dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/deduct_drying_fees"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/adjust_deduction_discount_tv_deduct_drying_fees"
+		      		android:layout_width="60dp"
+		      		android:layout_height="wrap_content"
+		      		style="@style/TextViewBackGroundLeft"/>
+		      	
+		      	<TextView 
+		      	    android:id="@+id/adjust_deduction_discount_tv_yuan_percent_two"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGroundRight"/>
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="wrap_content"
+		      		android:text="@string/add_deduction"
+		      		style="@style/TextViewNoBackGround"
+		      		android:layout_marginRight="5dp"
+		      		android:layout_marginLeft="5dp"/>
+		        <EditText 
+		          	android:id="@+id/adjust_deduction_discount_et_deduct_drying_fees_add"
+		      		android:layout_width="80dp"
+		      		android:layout_height="35dp"
+		      		style="@style/EditTextDisableBackGround"
+		      		android:inputType="number"
+		      		android:focusable="false"/>
+		       	<Button 
+		      	    android:id="@+id/adjust_deduction_discount_btn_adjust_baked_expenses_deducted_unit"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="wrap_content"
+		      		android:textColor="#FAF0E6"
+		      		style="@style/TextViewBackGround"/>
+		      	
+	      	</LinearLayout>
+	   	</LinearLayout>
+	   	
+		<LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="2dp">
+	    	
+	        <TextView 
+	  		    style="@style/TextViewBackGroundLeft"
+		   		android:layout_width="fill_parent"
+		   		android:layout_weight="1"
+		   		android:layout_height="35dp"
+		   		android:text="@string/Index_ID"
+		   		android:layout_gravity="center"
+		   	    android:gravity="center" />
+	        
+	        <TextView 
+	  		    style="@style/TextViewBackGroundRight"
+		   		android:layout_width="fill_parent"
+		   		android:layout_weight="1"
+		   		android:layout_height="35dp"
+		   		android:text="@string/Index_Value"
+		   		android:layout_gravity="center"
+		   	    android:gravity="center" />
+	    </LinearLayout>
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:id="@+id/adjust_deduction_discount_ll_bottom"
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    
+		<Button 
+	   	    android:layout_margin="2dp"
+	   	    style="@style/CornerButton"
+		    android:id="@+id/adjust_deduction_discount_btn_read_card"
+		    android:layout_width="fill_parent"
+		    android:layout_height="30dp"
+		    android:layout_gravity="center"
+		    android:text="@string/read_card"
+		    android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:visibility="gone"/>
+		
+		<LinearLayout 
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp">
+	        
+		    <Button 
+		        style="@style/CornerButton"
+		        android:id="@+id/adjust_deduction_discount_btn_save_deduction_discount"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="10"
+				android:layout_marginRight="1dp"
+				android:text="@string/save_deduction_discount"/>
+		    
+			<Button 
+			    style="@style/CornerButton"
+			    android:id="@+id/adjust_deduction_discount_btn_regist_vehicle_work"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="10"
+			    android:layout_marginLeft="1dp"
+			    android:text="@string/register_vehicle_work"/>
+			
+	    </LinearLayout>
+	</LinearLayout>
+	
+	<ListView
+	    android:layout_below="@id/adjust_deduction_discount_ll_top"
+	    android:layout_above="@id/adjust_deduction_discount_ll_bottom"
+   	    android:id="@+id/adjust_deduction_discount_lv"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_marginRight="5dp"
+   	    android:layout_marginLeft="5dp"/>
+	
+</RelativeLayout>

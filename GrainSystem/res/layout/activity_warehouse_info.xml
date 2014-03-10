@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    
+    <TextView
+        android:id="@+id/warehouse_info_tv_title"
+        android:layout_alignParentTop="true"
+        style="@style/TextViewTitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/warehouse_info"/>
+	
+	<LinearLayout 
+	    android:layout_below="@id/warehouse_info_tv_title"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:orientation="vertical"
+	    android:layout_margin="5dp">
+	    
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content">
+		    
+	  		<TextView 
+	  		   	style="@style/TextViewInfoBackGround"
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="35dp"
+		   		android:text="@string/storehouse_warehouse"
+		   		android:layout_gravity="center"
+		   	    android:gravity="center" />
+	  		
+	  		<Spinner
+		        android:id="@+id/warehouse_info_sp_storehouse_warehouse"
+		        android:layout_width="fill_parent"
+		        android:layout_height="40dp"
+		        android:layout_marginLeft="3dp"
+		        android:layout_marginRight="3dp"
+		        android:layout_weight="1"
+		        style="@style/MySpinner"/>
+		</LinearLayout>
+	    
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="3dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="35dp"
+		      		android:text="@string/capacity"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		            style="@style/TextViewBackGroundLeft"
+		          	android:id="@+id/warehouse_info_tv_capacity"
+		      		android:layout_width="95dp"
+		      		android:layout_height="35dp"
+		      		android:gravity="center"/>
+		      	
+		      	<TextView 
+		      	    style="@style/TextViewBackGroundRight"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="35dp"
+		      		android:text="@string/ton"
+		      		android:textColor="#FAF0E6"
+		      		android:layout_marginRight="3dp"/>
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="35dp"
+		      		android:text="@string/grain_kind"
+		      		android:gravity="center"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/warehouse_info_tv_grain_kind"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="35dp"
+		      		android:background="@drawable/textview_background"
+		      		android:gravity="center"/>
+		      	
+	      	</LinearLayout>
+	   	</LinearLayout>
+	    
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="3dp">
+	  		
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="35dp"
+		      		android:text="@string/total_quantity"
+		      		android:gravity="center"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		            style="@style/TextViewBackGroundLeft"
+		          	android:id="@+id/warehouse_info_tv_total_quantity"
+		      		android:layout_width="95dp"
+		      		android:layout_height="35dp"/>
+		      	
+		      	<TextView 
+		      	    style="@style/TextViewBackGroundRight"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="35dp"
+		      		android:text="@string/ton"
+		      		android:textColor="#FAF0E6"
+		      		android:layout_marginRight="3dp"/>
+	      	</LinearLayout>
+	      	
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+		        
+		        <TextView 
+		      		android:layout_width="wrap_content"
+		      		android:layout_height="35dp"
+		      		android:text="@string/grain_attribute"
+		      		android:gravity="center"
+		      		android:layout_marginRight="5dp"/>
+		        <TextView 
+		          	android:id="@+id/warehouse_info_tv_grain_attribute"
+		      		android:layout_width="fill_parent"
+		      		android:layout_height="35dp"
+		      		android:background="@drawable/textview_background"
+		      		android:gravity="center"/>
+	      	</LinearLayout>
+	    </LinearLayout> 	
+	    
+	   	<LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+	        
+	        <TextView 
+	      		android:layout_width="wrap_content"
+	      		android:layout_height="35dp"
+	      		android:text="@string/owner"
+	      		android:gravity="center"
+	      		android:layout_marginRight="5dp"
+	      		android:layout_marginLeft="3dp"/>
+	        <TextView 
+	          	android:id="@+id/warehouse_info_tv_owner"
+	      		android:layout_width="fill_parent"
+	      		android:layout_height="35dp"
+	      		android:background="@drawable/textview_background"
+	      		android:gravity="center"
+	      		android:layout_marginRight="3dp"/>
+	    </LinearLayout>
+    </LinearLayout>
+    
+   	<LinearLayout 
+   	    android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp">
+        
+	    <Button 
+	        style="@style/CornerButton"
+	        android:id="@+id/warehouse_info_btn_query"
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="1dp"
+			android:gravity="center"
+			android:layout_weight="1"
+			android:text="@string/Query_Warehouse_Info"/>
+	    
+		<Button 
+		    style="@style/CornerButton"
+		    android:id="@+id/warehouse_info_btn_set"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="1dp"
+			android:layout_marginRight="5dp"
+			android:gravity="center"
+		    android:layout_weight="1"
+		    android:text="@string/Set_Warehouse_Msg"/>
+		
+    </LinearLayout>
+	
+</RelativeLayout>	

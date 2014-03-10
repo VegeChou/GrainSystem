@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            style="@style/CornerButton"
+            android:id="@+id/main_btn_warehouse_info"
+            android:layout_width="130dp"
+            android:layout_height="85dp"
+            android:text="@string/warehouse_info"/>
+        
+        <LinearLayout 
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            style="@style/CornerButton"
+            android:id="@+id/main_btn_register_vehicle_work"
+            android:layout_width="130dp"
+            android:layout_height="85dp"
+            android:text="@string/register_vehicle_work"/>
+
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            style="@style/CornerButton"
+            android:id="@+id/main_btn_adjust_quality_info"
+            android:layout_width="130dp"
+            android:layout_height="85dp"
+            android:text="@string/adjust_quality_info" />
+        
+        <LinearLayout 
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            style="@style/CornerButton"
+            android:id="@+id/main_btn_tasking"
+            android:layout_width="130dp"
+            android:layout_height="85dp"
+            android:text="@string/tasking" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            style="@style/CornerButton"
+            android:id="@+id/main_btn_tasked"
+            android:layout_width="130dp"
+            android:layout_height="85dp"
+            android:text="@string/tasked" />
+        <LinearLayout 
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            style="@style/CornerButton"
+            android:id="@+id/main_btn_regist_weighing_weight"
+            android:layout_width="130dp"
+            android:layout_height="85dp"
+            android:text="@string/regist_weighing_weight" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            style="@style/CornerButton"
+            android:id="@+id/main_btn_retreat"
+            android:layout_width="130dp"
+            android:layout_height="85dp"
+            android:text="@string/retreat" />
+        
+        <LinearLayout 
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            style="@style/CornerButton"
+            android:id="@+id/main_btn_help"
+            android:layout_width="130dp"
+            android:layout_height="85dp"
+            android:text="@string/help" />
+
+    </LinearLayout>
+</LinearLayout>

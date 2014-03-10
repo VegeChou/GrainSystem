@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/warehouse_info_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:id="@+id/warehouse_info_tv_date"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_weight="90"
+        android:gravity="center"/>
+    
+    <TextView 
+        android:id="@+id/warehouse_info_tv_net_weigth"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_weight="100"
+        android:gravity="center"/>
+    
+    <TextView 
+        android:id="@+id/warehouse_info_tv_deduction"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_weight="100"
+        android:gravity="center"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aisino.grain"
+    android:versionCode="1"
+    android:versionName="1.0.1">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_RFID"/> 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:name="com.aisino.grain.GrainApplication">
+        
+        <activity
+            android:name="com.aisino.grain.ui.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name="com.aisino.grain.ui.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.RetreatActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.SyncDataActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.RegisterSampleActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.WarehouseInfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.WarehouseInfoQueryActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.HelpActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.TaskedActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.RegistVehicleWorkActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.RegistWeighingWeightActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.AdjustDeductionDiscountActivity"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.TaskingActivity"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.demo.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.demo.RetreatActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.demo.SyncDataActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.demo.TaskingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.demo.RegisterSampleActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.demo.WarehouseInfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.demo.WarehouseInfoQueryActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.demo.HelpActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.demo.TaskedActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.demo.RegistVehicleWorkActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.demo.RegistWeighingWeightActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.demo.AdjustDeductionDiscountActivity"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.demo.SystemConfigActivity"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" 
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        
+        <activity
+            android:name="com.aisino.grain.ui.SystemConfigActivity"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" 
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        
+        <service 
+            android:name="com.aisino.grain.service.ReadCardService"
+            android:label="@string/app_name">
+        </service>
+        
+    </application>
+
+</manifest>

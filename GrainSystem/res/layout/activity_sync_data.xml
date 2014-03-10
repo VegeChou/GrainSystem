@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/background">
+    
+    <TextView
+        android:id="@+id/sync_data_tv_title"
+    	style="@style/TextViewTitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/basic_data_classify"/>
+    
+    <Button 
+	    android:layout_alignParentBottom="true"
+	    style="@style/CornerButton"
+	    android:id="@+id/sync_data_btn_start_sync"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/start_sync"
+		android:layout_margin="5dp"/>	
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:orientation="vertical"
+	    android:layout_below="@id/sync_data_tv_title"
+	    android:layout_above="@id/sync_data_btn_start_sync"
+	    android:gravity="center">
+	    
+		<TableLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+		    
+		   	<TableRow 
+		        android:id="@+id/sync_data_tr_one"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center">
+		        
+		   	    <CheckBox 
+			        android:id="@+id/sync_data_cb_all_selected"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/all_selected"
+			        android:layout_weight="1"
+			        android:layout_gravity="center"
+			        android:layout_marginLeft="30dp"/>
+		        
+			    <TextView 
+			        android:id="@+id/sync_data_tv_basic_data_classify_name"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/basic_data_classify_name"
+			        android:layout_weight="1"
+			        android:gravity="center"
+			        android:layout_marginRight="30dp"/>
+		        
+		    </TableRow>
+		    
+			
+		    <TableRow 
+		        android:id="@+id/sync_data_tr_two"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+		        
+		        <CheckBox 
+			        android:id="@+id/sync_data_cb_warehouse_info"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:gravity="center"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:layout_marginLeft="30dp"/>
+				
+			    <TextView 
+			        android:id="@+id/sync_data_tv_warehouse_info"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/warehouse_info"
+			        android:gravity="center"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:layout_marginRight="20dp"/>
+		        
+		    </TableRow>
+		    
+		   	<TableRow 
+		        android:id="@+id/sync_data_tr_three"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+		        
+		        <CheckBox 
+			        android:id="@+id/sync_data_cb_business_type"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:gravity="center"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:layout_marginLeft="30dp"/>
+				
+			    <TextView 
+			        android:id="@+id/sync_data_tv_business_type"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/business_type"
+			        android:gravity="center"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:layout_marginRight="20dp"/>
+		        
+		    </TableRow>
+		    
+		   	<TableRow 
+		        android:id="@+id/sync_data_tr_four"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+		        
+		        <CheckBox 
+			        android:id="@+id/sync_data_cb_grain_type"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:gravity="center"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:layout_marginLeft="30dp"/>
+				
+			    <TextView 
+			        android:id="@+id/sync_data_tv_grain_type"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/grain_type"
+			        android:gravity="center"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:layout_marginRight="20dp"/>
+		        
+		    </TableRow>
+		    
+		   	<TableRow 
+		        android:id="@+id/sync_data_tr_five"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+		        
+		        <CheckBox 
+			        android:id="@+id/sync_data_cb_quality_index"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:gravity="center"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:layout_marginLeft="30dp"/>
+				
+			    <TextView 
+			        android:id="@+id/sync_data_tv_quality_index"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/quality_index"
+			        android:gravity="center"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:layout_marginRight="20dp"/>
+		        
+		    </TableRow>
+		    
+		   	<TableRow 
+		        android:id="@+id/sync_data_tr_six"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+		        
+		        <CheckBox 
+			        android:id="@+id/sync_data_cb_acount_info"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:gravity="center"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:layout_marginLeft="30dp"/>
+				
+			    <TextView 
+			        android:id="@+id/sync_data_tv_acount_info"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/acount_info"
+			        android:gravity="center"
+			        android:layout_gravity="center"
+			        android:layout_weight="1"
+			        android:layout_marginRight="20dp"/>
+		        
+		    </TableRow>
+		</TableLayout>
+	</LinearLayout>
+	
+</RelativeLayout>

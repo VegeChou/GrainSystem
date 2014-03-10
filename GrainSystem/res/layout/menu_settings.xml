@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+    <LinearLayout 
+        android:id="@+id/ll"
+        android:gravity="center"
+		android:layout_gravity="center"
+		android:background="@drawable/menu_bg_frame"
+		android:layout_alignParentBottom="true"
+		android:padding="5.0dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:horizontalSpacing="10.0dip"
+		android:verticalSpacing="3.0dip"
+		android:stretchMode="columnWidth"
+		android:columnWidth="80.0dip"
+		android:numColumns="auto_fit">
+        
+       	<TextView 
+			android:id="@+id/tv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableTop="@drawable/system_conifg"
+			android:text="设置"
+			android:textColor="#ffffff"
+			android:gravity="center"
+			android:layout_gravity="center"/>
+    </LinearLayout>
+    
+
+</RelativeLayout>
